@@ -46,6 +46,7 @@ const emailChecker = (value) => {
 
 const passwordChecker = (value) => {
   progressBar.classList = "";
+
   if (
     !value.match(
       /^(?=.*?[A-Z])(?=(.*[a-z]){1,})(?=(.*[\d]){1,})(?=(.*[\W]){1,})(?!.*\s).{8,}$/
@@ -55,7 +56,7 @@ const passwordChecker = (value) => {
       "password",
       "Minimum de 8 caractères, une majuscule, un chiffre et un caractère spécial"
     );
-    email = null;
+    password = null;
     progressBar.classList.add("progressRed");
   } else if (value.length < 12) {
     progressBar.classList.add("progressBlue");

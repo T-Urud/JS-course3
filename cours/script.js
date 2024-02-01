@@ -291,17 +291,10 @@ h3.forEach((language) => console.log(language.dataset.lang));
 // Les Regex
 // ---------------------------------
 
+let mail = "from_s$cratch33@gmail.com";
+// console.log(mail.search(/frscceeceom/));
+// console.log(mail.replace(/from/, "de"));
+// console.log(mail.match(/SCratch/i));
+
 let separator = 5455662562;
-
 console.log(separator.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "."));
-
-let fruit = ["bana", "abr", "pech", "pomm", "fra"];
-let counter = 0;
-while (counter < fruit.length) {
-  if (fruit[counter] == "pech") {
-    console.log("courgette");
-  }
-  console.log(fruit[counter]);
-  counter++;
-}
-console.log(fruit[3]);
